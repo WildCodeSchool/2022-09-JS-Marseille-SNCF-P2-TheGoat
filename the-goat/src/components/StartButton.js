@@ -6,7 +6,7 @@ export default function StartButton() {
   const navigate = useStartButton();
 
   const navigateToGame = () => {
-    // 👇️ navigate to /contacts
+  
     navigate('./components/games');
   };
 
