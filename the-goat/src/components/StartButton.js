@@ -13,8 +13,8 @@ export default function StartButton() {
 
   return (
     <div>
-      <div className='start-button'>
-        <button onClick={navigateToGame}
+      <div >
+        <button className='start-button' onClick={navigateToGame}
         img="the-goat/src/assets/image/pngegg.png" >Start the game</button>
 
 
