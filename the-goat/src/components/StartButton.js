@@ -19,7 +19,7 @@ export default function StartButton() {
 
 
         <Routes>
-          <Route path='./components/games' element={<Games />} />
+        <Route path='./components/games' element={<Games />} />
           
         </Routes>
       </div>
