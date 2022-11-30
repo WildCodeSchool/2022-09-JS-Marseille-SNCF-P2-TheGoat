@@ -1,6 +1,6 @@
 
 import {Routes, Route, useStartButton} from 'react-router-dom';
-import './StartButton.css';
+import './components/StartButton.css';
 
 export default function StartButton() {
   const navigate = useStartButton();
@@ -18,10 +18,6 @@ export default function StartButton() {
         img="the-goat/src/assets/image/pngegg.png" >Start the game</button>
 
 
-        <Routes>
-        <Route path='./components/games' element={<Games />} />
-          
-        </Routes>
       </div>
     </div>
   );
