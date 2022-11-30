@@ -1,11 +1,17 @@
 import React from 'react';
 import StartButton from "./components/StartButton";
 import './components/StartButton.css';
+// import { useState } from 'react';
 
-function App() {
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <StartButton />
+    <div>
+      <StartButton 
+      />
+      
     </div>
   );
 }

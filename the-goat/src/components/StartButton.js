@@ -1,23 +1,22 @@
-import React from 'react';
 import './StartButton.css';
+import Img1 from './Img1.png';
+import thegoat from './thegoat.jpg';
+
 
 function StartButton () {
-  
-
-    return (
-    
-      <div>
-      <form>
-      <input type="image" src="the-goat/src/assets/image/pngegg.png" alt=" Start the Game" width="48" height="48"/>
-      
-      </form>
-      </div>
-      
-
-
-     
+  return (
+    <div className='bgMain'>
+      <img src={thegoat} alt="" />
+        <div className='myButton'>
+          <img src={Img1} alt="Start The Game" />
+        </div>
+    </div>
   );
 }
+
+
+
+
 
 
 
