@@ -1,26 +1,24 @@
+import React from 'react';
+import './StartButton.css';
 
-import {Routes, Route, useStartButton} from 'react-router-dom';
-import './components/StartButton.css';
-
-export default function StartButton() {
-  const navigate = useStartButton();
-
-  const navigateToGame = () => {
+function StartButton () {
   
-    navigate('./components/games');
-  };
 
-
-  return (
-    <div>
-      <div >
-        <button className='start-button' onClick={navigateToGame}
-        img="the-goat/src/assets/image/pngegg.png" >Start the game</button>
-
-
+    return (
+    
+      <div>
+      <form>
+      <input type="image" src="the-goat/src/assets/image/pngegg.png" alt=" Start the Game" width="48" height="48"/>
+      
+      </form>
       </div>
-    </div>
+      
+
+
+     
   );
 }
 
 
+
+export default StartButton;

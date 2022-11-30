@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
-import Home from "./pages/Home";
-import './Start-button.css';
+import StartButton from "./components/StartButton";
+import './components/StartButton.css';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <StartButton />
     </div>
   );
 }
