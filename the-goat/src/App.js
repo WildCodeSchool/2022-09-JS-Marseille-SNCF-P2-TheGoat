@@ -1,14 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import StartButton from './components/feet-start-button/Start-button';
+import './components/Games.css';
+import Featgames from './components/Games.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <StartButton />
-      </header>
-    </div>
+  return (  
+    <Featgames />
   );
 }
 
