@@ -3,10 +3,10 @@ h1 {
 }
 .myButton img {
     
-    width: 100px;
+    
     position: absolute;
-    top: 80%;
-    right: 50%
+    bottom: -75%;
+    right: 45%
     
 }
 .bgmain img {
