@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import "./VideoContain.css";
 
 class VideoContain extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class VideoContain extends React.Component {
       },
     };
 
-    return <YouTube videoId="q1XiTZzIKpg" opts={opts} onReady={this._onReady} />;
+    return <YouTube className='video-item' videoId="q1XiTZzIKpg" opts={opts} onReady={this._onReady} />;
   }
 
   _onReady(event) {

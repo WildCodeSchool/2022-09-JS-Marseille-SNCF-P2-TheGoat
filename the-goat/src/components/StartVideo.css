@@ -1,12 +1,18 @@
-.toogleBtn {
-    width: 100px;
+.toogleBtn img{
+    width: 13%;
     position: absolute;
-    top: 90%;
-    right: 50%;
-}
-.bgVideo {
-   width: 100%;
-   height: 100%;
+    top: 76%;
+    right: 48%;
 }
 
+.bgVideo img {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:1;
+    object-fit:cover;
+        
+}
 

@@ -20,8 +20,7 @@ function StartVideo() {
                 <img onClick={toggleContent} src={ballon} alt=""/>
                 {content && (
                     <>
-
-                    <VideoContain />
+                     <VideoContain />
                     </>
                 )}
             </div>
