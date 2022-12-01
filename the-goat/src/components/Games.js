@@ -1,6 +1,7 @@
 import React from 'react';
 import './Games.css';
 import cardImageSrc from "./images/curry-vignette.png";
+import parquetImageSrc from "./images/parquet.jpg";
 
 
 function Games() {
@@ -21,57 +22,66 @@ function Games() {
                 <div className='Card-legend-contain'>
                     <div className='Card-legend'>
                         <div className='Image-card-legend'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                         alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend'>Stephen Curry</div>
                     </div>
                     <button className='buttonVs'>VS</button>
                     <div className='Card-legend1'>
                         <div className='Image-card-legend1'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend1'>Stephen Curry</div>
                     </div>
                 </div>
                 <div className='Card-legend-contain'>
                     <div className='Card-legend'>
                         <div className='Image-card-legend'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend'>Stephen Curry</div>
                     </div>
                     <button className='buttonVs'>VS</button>
                     <div className='Card-legend1'>
                         <div className='Image-card-legend1'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend1'>Stephen Curry</div>
                     </div>
                 </div>
                 <div className='Card-legend-contain'>
                     <div className='Card-legend'>
                         <div className='Image-card-legend'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend'>Stephen Curry</div>
                     </div>
                     <button className='buttonVs'>VS</button>
                     <div className='Card-legend1'>
                         <div className='Image-card-legend1'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend1'>Stephen Curry</div>
                     </div>
                 </div>
                 <div className='Card-legend-contain'>
                     <div className='Card-legend'>
                         <div className='Image-card-legend'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend'>Stephen Curry</div>
                     </div>
                     <button className='buttonVs'>VS</button>
                     <div className='Card-legend1'>
                         <div className='Image-card-legend1'><img src={cardImageSrc} className="playerImg"
-        alt="image des joueurs"/></div>                        
+                        alt="image des joueurs"/></div>                        
                         <div className='Name-card-legend1'>Stephen Curry</div>
                     </div>
                 </div>
+                
             </div>
+            <div className='GamesPageButtons'>
+                    <button className='PageButtons'>1</button>
+                    <button className='PageButtons'>2</button>
+                    <button className='PageButtons'>3</button>
+                    <button className='PageButtons'>4</button>
+                </div>
+            
           </div>
+          
 
         </div>
       );

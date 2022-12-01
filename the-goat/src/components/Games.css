@@ -2,30 +2,43 @@
     margin:0;
     padding: 0;
 }
+@font-face {
+	font-family: 'Audiowide';
+        src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
+    }
 .Games{
     background-color: rgb(83, 81, 81);
     display:flex;
     flex-direction: column;
     justify-content: center;
-    border-style: solid;
-    border-color: #d8c444;
+    
 }
 .Games-header{
     height: 15em;
     width: 100%;
+    background-image:url('./images/parquet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 h1 {
-    color: #ffffff;
+    color: #d8c444;
+    text-shadow: 4px 2px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 h2{
-    color: #f2d5af;
+    color: #d8c444;
+    font-size: 30px;
+    text-shadow: 3px 1px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 p {
     color: #ffffff;
+    text-shadow: 2px 1px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 
 .Onegoat{
@@ -34,26 +47,25 @@ p {
     align-items: center;
 }
 .Games-main-title{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    background-color: #ab9980;
-    border-color: #d8c444;
-    height:25%;
-    width:35%;
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 25%;
+    width: 35%;
+    font-size: 80px;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 .Games-subtitle{
-    width: 25vh;
+    width: 20em;
     display: flex;
     justify-content: space-around;
 }
-
-.Card-legend-container{
+.Body-games{
     background-image:url('./images/jordanfond.jpg');
+}
+.Card-legend-container{
+    
     border-color: #d8c444;
     height: 30em;
     width: 100%;
@@ -66,38 +78,38 @@ p {
 }
 .Card-legend-contain{
     height: 14em;
-    width: 26em;
+    width: 28em;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
-    border-style: solid;
-    border-color: rgb(253, 253, 253);
     padding: 3px;
+    flex-wrap: nowrap;
 }
 .Card-legend{
     height: 13em;
     width: 12em;
-    border-style: double;
+    border-style: solid;
     border-color: #d8c444;
-    border-width: 5px;
+    border-width: 2px;
     display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
+    justify-content: space-evenly;
 }
 .Name-card-legend{
     background-color: #d8c444;
     width: 100%;
     text-align: center;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 .Name-card-legend1{
     background-color: #d8c444;
     width: 100%;
     text-align: center;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
 .playerImg{
     height: 100%;
@@ -106,22 +118,40 @@ p {
 .Card-legend1{
     height: 13em;
     width: 12em;
-    border-style: double;
+    border-style: solid;
     border-color: #d8c444;
-    border-width: 5px;
+    border-width: 2px;
     display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
+    justify-content: space-evenly;
 }
 .buttonVs {
     height: 3em;
     width: 3em;
+    font-size: 17px;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
     background-color: #fcfafa00;
     color: #d8c444;
     border-color: #d8c444;
+}
+.GamesPageButtons{
+    display: flex;
+    background-color: #7fffd408;
+    flex-direction: row;
+    justify-content: center;
+}
+.PageButtons{
+    height: 2em;
+    width: 2em;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcfafa00;
+    color: #d8c444;
+    border-color: #d8c444;
+
 }
