@@ -1,73 +1,24 @@
-import { useState, useEffect } from "react";
+import React from 'react';
+import YouTube from 'react-youtube';
 
-const VideoContain = (videoElement) => {
-  const [playerState, setPlayerState] = useState({
-    isPlaying: false,
-    progress: 0,
-    speed: 1,
-    isMuted: false,
-  });
+class VideoContain extends React.Component {
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+      },
+    };
 
-  const togglePlay = () => {
-    setPlayerState({
-      ...playerState,
-      isPlaying: !playerState.isPlaying,
-    });
-  };
+    return <YouTube videoId="q1XiTZzIKpg" opts={opts} onReady={this._onReady} />;
+  }
 
-  useEffect(() => {
-    playerState.isPlaying
-      ? videoElement.current.play()
-      : videoElement.current.pause();
-  }, [playerState.isPlaying, videoElement]);
-
-  const handleOnTimeUpdate = () => {
-    const progress = (videoElement.current.currentTime / videoElement.current.duration) * 100;
-    setPlayerState({
-      ...playerState,
-      progress,
-    });
-  };
-
-  const handleVideoProgress = (event) => {
-    const manualChange = Number(event.target.value);
-    videoElement.current.currentTime = (videoElement.current.duration / 100) * manualChange;
-    setPlayerState({
-      ...playerState,
-      progress: manualChange,
-    });
-  };
-
-  const handleVideoSpeed = (event) => {
-    const speed = Number(event.target.value);
-    videoElement.current.playbackRate = speed;
-    setPlayerState({
-      ...playerState,
-      speed,
-    });
-  };
-
-  const toggleMute = () => {
-    setPlayerState({
-      ...playerState,
-      isMuted: !playerState.isMuted,
-    });
-  };
-
-  useEffect(() => {
-    playerState.isMuted
-      ? (videoElement.current.muted = true)
-      : (videoElement.current.muted = false);
-  }, [playerState.isMuted, videoElement]);
-
-  return {
-    playerState,
-    togglePlay,
-    handleOnTimeUpdate,
-    handleVideoProgress,
-    handleVideoSpeed,
-    toggleMute,
-  };
-};
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
+}
 
 export default VideoContain;
