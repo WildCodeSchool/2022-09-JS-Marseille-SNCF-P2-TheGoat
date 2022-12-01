@@ -1,8 +1,12 @@
 .toogleBtn {
     width: 100px;
     position: absolute;
-    top: 10%;
+    top: 90%;
     right: 50%;
+}
+.bgVideo {
+   width: 100%;
+   height: 100%;
 }
 
 

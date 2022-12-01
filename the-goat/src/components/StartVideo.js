@@ -2,8 +2,8 @@ import React from 'react';
 import "./StartVideo.css";
 import VideoContain from "../components/VideoContain";
 import { useState } from "react";
-import ballon from "../assets/image/ballon1.png";
-import theGoat from "../App.test/image/the-goat.jpg";
+import ballon from "../assets/image/ballon-playvideo.png";
+import theGoat from "../assets/image/the-goat.jpg";
 
 function StartVideo() {
     
@@ -14,8 +14,8 @@ function StartVideo() {
       };
     
       return (
-        <div>
-            <img src={theGoat} alt="" />
+        <div className='video'>
+            <img className='bgVideo' src={theGoat} alt="" />
             <div className="toogleBtn">
                 <img onClick={toggleContent} src={ballon} alt=""/>
                 {content && (
