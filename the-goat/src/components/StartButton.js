@@ -1,6 +1,6 @@
 import './StartButton.css';
 import Img1 from '../assets/ballon-startgame.png';
-import thegoat from '../assets/thegoaBG.jpg';
+import thegoat from '../assets/the-goatBG.jpg';
 // import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
