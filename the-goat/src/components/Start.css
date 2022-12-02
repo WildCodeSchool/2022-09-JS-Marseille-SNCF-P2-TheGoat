@@ -11,6 +11,7 @@
 .start h2{
   margin-top: 0.5em;
   font-size: 2rem;
+  letter-spacing: 0.3em;
   -webkit-animation: start 5s steps(1, start) 9000ms both;
   animation: start 5s steps(1, start) 9000ms both;
 }
