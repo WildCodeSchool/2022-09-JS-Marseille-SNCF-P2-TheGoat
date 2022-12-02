@@ -3,7 +3,7 @@ import "./StartVideo.css";
 import VideoContain from "../components/VideoContain";
 import { useState } from "react";
 import ballon from "../assets/image/ballon-playvideo.png";
-import theGoat from "../assets/image/the-goat.jpg";
+import theGoat from "../assets/image/the-goatBG.jpg";
 
 function StartVideo() {
     
