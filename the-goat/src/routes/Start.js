@@ -1,5 +1,7 @@
 import React from "react";
 import "../components/Start.css";
+import { Link } from "react-router-dom";
+
 function Start() {
   return (
     <>
@@ -14,9 +16,10 @@ function Start() {
           <span className="title-start-t-2">.t</span>
         </h1>
         <h2>Greatest Of All Time</h2>
-        <button  className="ballon"></button>
+        <Link to="/home">
+          <button className="ballon"></button>
+        </Link>
       </div>
-      
     </>
   );
 }

@@ -11,6 +11,7 @@ import Features from "./routes/Features";
 import Start from "./routes/Start";
 import Navbar from "./components/Navbar";
 import "./components/Navbar.css";
+import "./App.css"
 
 const AppLayout = () => (
   <>
@@ -23,11 +24,11 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: "start",
+        path: "/",
         element: <Start />,
       },
       {
-        path: "/",
+        path: "/home",
         element: <Home />,
       },
       {
