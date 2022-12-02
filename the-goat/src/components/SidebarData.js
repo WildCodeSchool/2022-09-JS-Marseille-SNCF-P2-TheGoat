@@ -10,12 +10,14 @@ export const SidebarData = [
     path: "/",
     icons: <AiIcons.AiFillHome />,
     cName: "nav-text",
+
   },
   {
     title: "Game",
     path: "/game",
     icons: <IoIcons.IoMdBasketball />,
     cName: "nav-text",
+
   },
   {
     title: "Season",
