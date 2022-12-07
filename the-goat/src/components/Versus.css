@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Audiowide';
+        src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
+    }
+.Versus-header{
+    width: 100%;
+    background-image:url('./images/parquet\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15em;
+}
+h1 {
+    color: #d8c444;
+    text-shadow: 4px 2px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: #d8c444;
+    font-size: 30px;
+    text-shadow: 3px 1px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    color: #ffffff;
+    text-shadow: 2px 1px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+.Versus-main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 35%;
+    font-size: 80px;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+.Versus-subtitle{
+    width: 20em;
+    display: flex;
+    justify-content: space-around;
+}
+.Onegoat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Body-versus{
+    background-image:url('./images/bgkobe02.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Versus-legend-container{
+    
+    border-color: #d8c444;
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+}
+.Versus-legend{
+    height: 13em;
+    width: 12em;
+    border-style: solid;
+    border-color: #d8c444;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.Name-versus-legend{
+    background-color: #d8c444;
+    width: 100%;
+    text-align: center;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+.Name-versus-legend1{
+    background-color: #d8c444;
+    width: 100%;
+    text-align: center;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+.playerImg{
+    height: 100%;
+    width: 100%;
+}
+.Versus-legend1{
+    height: 13em;
+    width: 12em;
+    border-style: solid;
+    border-color: #d8c444;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}

@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import StartButton from './components/feet-start-button/Start-button';
+import Versus from './components/Versus';
+import './components/Versus.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <StartButton />
+        <Versus />
       </header>
     </div>
   );
