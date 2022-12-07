@@ -1,5 +1,5 @@
 import React from 'react';
-import cardImageSrc from "./images/stephcurry-vignette.png";
+import cardImageSrc from "./images/Kevin-Durant-VS.png";
 import './Versus.css';
 
 
@@ -21,12 +21,12 @@ function Versus() {
                 <div className='Versus-legend'>
                     <div className='Image-Versus-legend'><img src={cardImageSrc} className="playerImg"
                      alt="image des joueurs"/></div>                        
-                    <div className='Name-Versus-legend'>Stephen Curry</div>
+                    
                 </div>
                 <div className='Versus-legend1'>
                     <div className='Image-Versus-legend1'><img src={cardImageSrc} className="playerImg"
                         alt="image des joueurs"/></div>                        
-                    <div className='Name-Versus-legend1'>Stephen Curry</div>
+                    
                 </div>
             </div>            
 
