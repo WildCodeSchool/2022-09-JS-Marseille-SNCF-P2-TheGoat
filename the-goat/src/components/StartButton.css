@@ -1,24 +1,16 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Audiowide", sans-serif;
-  }
 .myButton img{
+   position: absolute;
+   top:  60%;
+   right: 45%
     
+}
 
-    position: absolute;
-   top:  75%;
-    right: 42%
-    
+img{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+ 
 }
-.bgmain img {
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    position:fixed;
-    z-index:1;
-    object-fit:cover;
-        
-}
+body {
+    overflow: hidden;
+  }

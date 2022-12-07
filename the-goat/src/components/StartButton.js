@@ -15,12 +15,13 @@ function StartButton () {
       
   };
   return (
-    <>
-      <img src={thegoat} alt="" className='bgMain'/>
+    <div className='bgMain'>
+      <img src={thegoat} alt="" />
         <div className='myButton'>
           <img onClick={navigateGame} src={Img1} alt="Start The Game" />
         </div>
-    </>
+      
+    </div>
   );
 }
 
