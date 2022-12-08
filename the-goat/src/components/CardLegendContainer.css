@@ -6,16 +6,6 @@
 	font-family: 'Audiowide';
         src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
     }
-.Games{
-    background-color: rgb(83, 81, 81);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.Body-games{
-    background-image:url('./images/jordanfond.jpg');
-}
 .Card-legend-container{
     
     border-color: #d8c444;
@@ -79,15 +69,3 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
-.buttonVs {
-    height: 3em;
-    width: 3em;
-    font-size: 17px;
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
-    background-color: #fcfafa00;
-    color: #d8c444;
-    border-color: #d8c444;
-}
-
