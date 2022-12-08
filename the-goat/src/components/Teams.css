@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.teams {
+    background-color: rgb(83, 81, 81);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden;
+  }
+.teams-header {
+    height: 10em;
+    width: 100%;
+    background-image: url('../assets/jordanfond.jpg');
+    
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+      
+  }
+.body-teams{
+    background-image: url('../assets/jordanfond.jpg');
+}
+
+.Onegoat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teams-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 35%;
+    font-size: 80px;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #d8c444;
+    text-shadow: 4px 2px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: #d8c444;
+    font-size: 30px;
+    text-shadow: 3px 1px 0px #282c34;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-teams-container{
+    border-color: #d8c444;
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
+  
+}
+
+  .title-card{
+    background-color: #d8c444;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  .list-card{
+    height: 24em;
+    width: 28em;
+    border-style: solid;
+    border-color: #d8c444;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly
+  }
+  
+.teamsMapButtons{
+    display: flex;
+    background-color: #d8c444;
+    text-align: center;
+    justify-content: center;
+}
+.mapButtons{
+    height: 2em;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+}
