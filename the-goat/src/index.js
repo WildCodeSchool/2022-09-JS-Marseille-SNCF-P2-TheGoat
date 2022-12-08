@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Stats from "./routes/Stats";
 import Home from "./routes/Home";
 import Game from "./routes/Game";
-import Season from "./routes/Calendar";
 import Team from "./routes/Team";
 import Versus from "./routes/Versus";
 import Features from "./routes/Features";

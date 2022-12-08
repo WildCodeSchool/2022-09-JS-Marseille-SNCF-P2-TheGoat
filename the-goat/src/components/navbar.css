@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@
 .features,
 .fight,
 .game,
-.season,
+.calendar,
 .stats,
 .team {
   display: flex;
