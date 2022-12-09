@@ -8,9 +8,8 @@ function CardLegendContainer(){
         <div className='Card-legend-container'>
                 
             <CardLegendContain />
-            <CardLegendContain />
-            <CardLegendContain />
-            <CardLegendContain />
+            
+            
                             
         </div>
     );

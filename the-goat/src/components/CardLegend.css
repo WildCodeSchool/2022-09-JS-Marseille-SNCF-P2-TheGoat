@@ -6,7 +6,6 @@
 	font-family: 'Audiowide';
         src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
     }
-
 .Card-legend{
     height: 13em;
     width: 12em;
@@ -17,7 +16,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 .Name-card-legend{
     background-color: #d8c444;
@@ -31,10 +30,6 @@
     text-align: center;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
-.playerImg{
-    height: 100%;
-    width: 100%;
-}
 .Card-legend1{
     height: 13em;
     width: 12em;
@@ -45,5 +40,5 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }

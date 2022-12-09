@@ -6,6 +6,7 @@ import './Games.css';
 import './Header.css';
 import './PageButtons.css';
 import './CardLegendContainer';
+import './CardLegendContain';
 
 function Games() {
     return (

@@ -1,16 +1,16 @@
 import React from 'react';
 import ButtonsVS from './ButtonsVS';
-import CardData from './CardDataLeft';
+// import CardData from './CardData';
 import CardLegend from './CardLegend';
-import CardDataLeft from './CardDataLeft';
-import CardDataRight from './CardDataRight';
+import CardData from './CardData';
+
 
 
 const MapCard = () => {
-    console.log(CardData);
+    
     return (
       <div className="Card-Legend">
-        {CardDataLeft.map((data, index) => (
+        {CardData.map((data, index) => (
           <CardLegend
             key={index}
             dataImage={data.image}
@@ -18,13 +18,13 @@ const MapCard = () => {
            />
         ))}
         <ButtonsVS />
-        {CardDataRight.map((data, index) => (
+        {/* {CardDataRight.map((data, index) => (
           <CardLegend
             key={index}
             dataImage={data.image}
             dataName={data.name}
            />
-        ))}
+        ))} */}
       </div>
     );
   };

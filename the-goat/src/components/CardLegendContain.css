@@ -7,7 +7,7 @@
         src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
     }
 .Card-legend-contain{
-    height: 14em;
+    height: 13em;
     width: 28em;
     display: flex;
     flex-direction: row;
