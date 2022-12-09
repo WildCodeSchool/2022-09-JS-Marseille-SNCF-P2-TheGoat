@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CalendarContainer from "../components/CalendarContainer";
 import axios from "axios";
-import "./calendar.css";
+import "./Calendar.css";
+
 function Calendar() {
   const [dataStanding, setDataStanding] = useState([]);
 
@@ -12,29 +13,35 @@ function Calendar() {
       "X-RapidAPI-Key": "013a444627mshf9bcad4107c99f3p12b47djsn6fa2257b0430",
       "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
     },
+    // params: {
+    //   ID: 16975,
+    // },
   };
+  useEffect(() => {
+    axios
+      .request(options)
+      .then((response) => {
+        console.log(response.data, "responseData");
+        setDataStanding(response.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
-  axios.request(options).then(function (response) {
-    console.log(response.data);
-    setDataStanding(response.data)
-  }).catch(function (error) {
-    console.error(error);
+  console.log(dataStanding?.data?.[0].slug, "dataStanding");
+
+  const standings = dataStanding?.data?.map((data, index) => {
+    return (
+      <tr>
+        <td>{data.slug}</td>
+      </tr>
+    );
   });
-
-  const standings = dataStanding.map ((data,index ) => {
-      return(
-        <tr>
-              <td>{data.id}</td>
-              
-            </tr>
-      )
-  })
 
   return (
     <>
       <div className="calendar-contain">
-        <CalendarContainer
-        />{standings}
+        <CalendarContainer />
+        {standings}
       </div>
     </>
   );

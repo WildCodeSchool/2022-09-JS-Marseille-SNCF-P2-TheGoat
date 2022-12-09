@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Box, CardContent, Typography } from "@mui/material";
-import CustomizedTables from "./table";
+// import CustomizedTables from "./Table";
 
 function StandingCards() {
   return (
