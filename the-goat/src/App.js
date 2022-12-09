@@ -1,12 +1,27 @@
-import React from "react";
+import React from 'react';
+import StartButton from "./components/StartButton";
+import './App.css';
+
 import StartVideo from "./components/StartVideo";
-import "./App.css";
+
 import "./components/StartVideo.css"
 
-function App() {
+
+
+
+
+
+const App = () => {
   return (
     <>
+    <div>
+      <StartButton 
+      />
+      
+    </div>
+    <div>
       <StartVideo />
+    </div>
     </>
   );
 }
