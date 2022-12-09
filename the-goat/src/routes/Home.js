@@ -3,7 +3,7 @@ import StartButton from "../components/StartButton";
 import StartVideo from "../components/StartVideo";
 
 import "../components/Home.css";
-import theGoat from "../assets/image/the-goatBG.jpg";
+import theGoat from "../components/image/the-goat-BG.jpg";
 
 function Home (){
   return (

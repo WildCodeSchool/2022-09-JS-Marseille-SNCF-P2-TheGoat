@@ -1,21 +1,12 @@
 .toogleBtn img{
-    width: 9%;
+    width: 10%;
     position: absolute;
-    top: 59%;
+    top: 96%;
     right: 46%;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    
 }
 
-img:hover{
-    animation-name: img;
-    animation-timing-function: ease;
-}
-@keyframes img {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-50px); }
-    100% { transform: translateY(0); }
-} 
+ 
 
    
 
