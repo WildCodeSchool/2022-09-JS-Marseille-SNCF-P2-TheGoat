@@ -17,7 +17,7 @@ export default function CardContain() {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Team One" />
+        <ListItemText  primary="Team One" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
