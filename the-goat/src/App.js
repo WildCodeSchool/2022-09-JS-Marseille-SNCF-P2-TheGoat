@@ -1,13 +1,32 @@
 import React from "react";
 import Home from "./Home";
+
+import StartButton from "./components/StartButton";
 import './App.css';
 
-function App() {
+import StartVideo from "./components/StartVideo";
+
+import "./components/StartVideo.css"
+
+
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <Home />
+   <>
+    <div>
+      <StartButton 
+      />
+      
     </div>
+    <div>
+      <StartVideo />
+    </div>
+    </>
   );
 }
+
 
 export default App;
