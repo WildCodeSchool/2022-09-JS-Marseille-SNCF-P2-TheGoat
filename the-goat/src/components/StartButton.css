@@ -1,18 +1,13 @@
 .myButton img{
     position: absolute;
-    top:  89%;
+    top:  85%;
     right: 47%;
-    width : 8%;
+    width : 7%;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
- 
-}
+
 img:hover{
     animation-name: img;
     animation-timing-function: ease;
@@ -22,6 +17,11 @@ img:hover{
     50%  { transform: translateY(-50px); }
     100% { transform: translateY(0); }
 } 
-body {
-    overflow: hidden;
-}
+
+/* .bgMain {
+      
+      background-image: url('../components/image/the-goat-BG.jpg');
+      max-width: 100%;
+      max-height: 100%;
+      
+    } */

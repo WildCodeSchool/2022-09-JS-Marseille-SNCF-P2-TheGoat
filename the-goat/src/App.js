@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Home";
+
 
 import StartButton from "./components/StartButton";
 import './App.css';

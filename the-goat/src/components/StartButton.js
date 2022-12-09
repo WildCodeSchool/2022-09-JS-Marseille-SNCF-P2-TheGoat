@@ -1,24 +1,26 @@
 import './StartButton.css';
 import Img1 from '../assets/ballon-startgame.png';
-import thegoat from '../assets/the-goatBG.jpg';
-// import {Routes, Route, useNavigate} from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+
 
 
 function StartButton () {
 
   const navigateGame = () => {
-    alert('Go Page Game');
-    
-      //     // 👇️ navigate to /
-      //     navigate('/Game');
-      //   };
+       
+          // 👇️ navigate to /
+          navigateGame('/Game');
+      
       
   };
   return (
     <div className='bgMain'>
-      <img src={thegoat} alt="" />
+      
         <div className='myButton'>
+        <Link to="/Game">
           <img onClick={navigateGame} src={Img1} alt="Start The Game" />
+        </Link>
         </div>
       
     </div>
