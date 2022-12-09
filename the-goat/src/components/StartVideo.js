@@ -14,17 +14,17 @@ function StartVideo() {
       };
     
       return (
-        <div className='video'>
-            
+        
+          <>
             <div className="toogleBtn">
                 <img onClick={toggleContent} src={ballon} alt=""/>
                 {content && (
-                    <>
+                    
                      <VideoContain />
-                    </>
+                    
                 )}
             </div>
-        </div>
+          </>
       );
     }
     
