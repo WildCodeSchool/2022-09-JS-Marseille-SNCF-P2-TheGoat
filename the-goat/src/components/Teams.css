@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: 'Audiowide';
-        src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
+        src:  url('../fonts/Audiowide-Regular.ttf') format(truetype);
     }
 .teams {
     background-color: rgb(83, 81, 81);
@@ -25,14 +25,24 @@
     justify-content: space-around;
       
   }
-.body-teams{
-    background-image: url('../assets/jordanfond.jpg');
+h1 {
+  font-size: 80px;
+    color: #d8c444;
+    text-shadow: 4px 2px 0px #282c34;
+    font-family: 'Audiowide';
+    src:  url('../fonts/Audiowide-Regular.ttf') format(truetype);
 }
-
 .Onegoat{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+h2{
+    color: #d8c444;
+    font-size: 40px;
+    text-shadow: 3px 1px 0px #282c34;
+    font-family: 'Audiowide';
+        src:  url('../fonts/Audiowide-Regular.ttf') format(truetype);
 }
 .teams-title{
     display: flex;
@@ -43,24 +53,17 @@
     width: 35%;
     font-size: 80px;
     font-family: 'Audiowide';
-        src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
+        src:  url('../fonts/Audiowide-Regular.ttf') format(truetype);
 }
 
-h1 {
-  font-size: 60px;
-    color: #d8c444;
-    text-shadow: 4px 2px 0px #282c34;
-    font-family: 'Audiowide';
-    src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
-}
-h2{
-    color: #d8c444;
-    font-size: 20px;
-    text-shadow: 3px 1px 0px #282c34;
-    font-family: 'Audiowide';
-        src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
-}
 
+
+.body-teams{
+  background-image: url('../assets/jordanfond.jpg');
+  width: 100vw;
+  height: 100%;
+
+}
 .card-teams-container{
     border-color: #d8c444;
     height: 30em;
@@ -80,7 +83,7 @@ h2{
     text-align: center;
     font-size: 20px;
     font-family: 'Audiowide';
-        src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
+        src:  url('../fonts/Audiowide-Regular.ttf') format(truetype);
     
   }
   .list-card{
@@ -99,14 +102,25 @@ h2{
 .teamsMapButtons{
     display: flex;
     background-color: #d8c444;
-    text-align: center;
     justify-content: center;
 }
-.mapButtons{
-    height: 2em;
+/* --ClassName de Map.js Map 1 et 2 */
+.Map2{
+  background-image: url(../assets/04_maps.png);
+  height: 5em;
     width: auto;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Audiowide';
         src:  url(../fonts/Audiowide-Regular.ttf) format(truetype);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.Map1{
+  position:fixed;
+    top:18%;
+    left:10%;
+  width: 80%;
+  height: auto;
 }

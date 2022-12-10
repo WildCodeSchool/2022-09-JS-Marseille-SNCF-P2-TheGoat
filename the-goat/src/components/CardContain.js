@@ -7,11 +7,13 @@ import Avatar from '@mui/material/Avatar';
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
+import Audiowide from '../fonts/Audiowide-Regular.ttf'
+import './CardContain.css'
 
 export default function CardContain() {
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-      <ListItem>
+    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', fontFamily:{Audiowide} }}>
+      <ListItem >
         <ListItemAvatar>
           <Avatar>
             <ImageIcon />

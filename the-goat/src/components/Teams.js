@@ -1,8 +1,9 @@
 import React from 'react';
 import './Teams.css';
 import CardContain from './CardContain';
+import Map from './Map';
 // import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
-import Map from '../assets/nba-map.jpg';
+// import Map from '../assets/nba-map.jpg';
 
 
 function Teams() {
@@ -73,7 +74,7 @@ function Teams() {
             </div>
         </div>
         <div className='teamsMapButtons'>
-            <button onClick={Map} className='mapButtons'>Look the Map !</button>
+            <Map />
         </div>
     </div>
   );
