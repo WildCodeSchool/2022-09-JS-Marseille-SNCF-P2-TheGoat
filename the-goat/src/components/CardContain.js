@@ -19,7 +19,7 @@ export default function CardContain() {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText  primary="Team One" />
+        <ListItemText  primary="Milwaukee Bucks" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
@@ -27,7 +27,7 @@ export default function CardContain() {
             <WorkIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Team Two" />
+        <ListItemText primary="Cleveland Cavaliers" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
@@ -35,7 +35,7 @@ export default function CardContain() {
             <BeachAccessIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Team Three" />
+        <ListItemText primary="Indiana Pacers" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
@@ -43,7 +43,7 @@ export default function CardContain() {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Team Four" />
+        <ListItemText primary="Chicago Bulls" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
@@ -51,7 +51,7 @@ export default function CardContain() {
             <WorkIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Team Five" />
+        <ListItemText primary="Detroit Pistons" />
       </ListItem>
       <ListItem></ListItem>
     </List>
