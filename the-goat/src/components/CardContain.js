@@ -13,10 +13,10 @@ import './CardContain.css'
 export default function CardContain() {
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', fontFamily:{Audiowide} }}>
-      <ListItem >
-        <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
+      <ListItem className='list-item'>
+        <ListItemAvatar className='list-avatar'>
+          <Avatar className='avatar'>
+            <ImageIcon className='image-icon'/>
           </Avatar>
         </ListItemAvatar>
         <ListItemText  primary="Milwaukee Bucks" />
@@ -24,7 +24,7 @@ export default function CardContain() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <WorkIcon className='work-icon'/>
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Cleveland Cavaliers" />
@@ -32,7 +32,7 @@ export default function CardContain() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <BeachAccessIcon className='beach-icon' />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Indiana Pacers" />

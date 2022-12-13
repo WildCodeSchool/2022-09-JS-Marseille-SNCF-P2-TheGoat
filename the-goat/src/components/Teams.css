@@ -12,11 +12,13 @@
     flex-direction: column;
     justify-content: center;
     overflow:hidden;
+    height: auto;
+
   }
 .teams-header {
     height: 15em;
     width: 100%;
-    background-image: url('../assets/jordanfond.jpg');
+    background-image: url('../assets/parquet.jpg');
     
     background-size: cover;
     display: flex;
@@ -60,8 +62,10 @@ h2{
 
 .body-teams{
   background-image: url('../assets/jordanfond.jpg');
-  width: 100vw;
+  width: 100%;
   height: 100%;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
 
 }
 .card-teams-container{
@@ -103,10 +107,12 @@ h2{
     display: flex;
     background-color: #d8c444;
     justify-content: center;
+    overflow-y: hidden;
 }
 /* --ClassName de Map.js Map 1 et 2 */
 .Map2{
-  background-image: url(../assets/04_maps.png);
+  background-image: url('../assets/04_maps.png');
+    background-repeat: no-repeat;
   height: 5em;
     width: auto;
     font-size: 20px;
@@ -116,11 +122,21 @@ h2{
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 50%;
+    border: none;
+    background-color: #d8c444;
 }
+
 .Map1{
   position:fixed;
-    top:18%;
-    left:10%;
+    top:2%;
+    left: 10%;
   width: 80%;
   height: auto;
 }
+
+
+
+
+
+
+  

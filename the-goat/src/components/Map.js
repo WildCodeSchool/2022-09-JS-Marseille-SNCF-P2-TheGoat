@@ -18,7 +18,7 @@ function Map(){
         <div className="toogleBtn">
             <button className='Map2' onClick={toggleContent} alt="">
             {content && (
-                <img className='Map1' src={MapImg} alt=''/>
+                <img className='Map1' src={MapImg}  alt=''/>
             )}
            Look at the Map !</button>
         </div>
