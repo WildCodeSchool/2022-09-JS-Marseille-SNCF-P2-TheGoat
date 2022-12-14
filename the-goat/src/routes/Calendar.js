@@ -1,50 +1,40 @@
 import React, { useState, useEffect } from "react";
-import CalendarContainer from "../components/CalendarContainer";
+import CustomizedTables from "../components/CustomizedTables";
 import axios from "axios";
-import "./Calendar.css";
+import CalendarContainer from "../components/CalendarContainer";
+import StandingCards from "../components/StandingCards";
+import TestTable from "./TestTable";
 
-function Calendar() {
-  const [dataStanding, setDataStanding] = useState([]);
+function App() {
+  const [dataStanding, setDataStanding] = useState();
 
-  const options = {
-    method: "GET",
-    url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
-    headers: {
-      "X-RapidAPI-Key": "013a444627mshf9bcad4107c99f3p12b47djsn6fa2257b0430",
-      "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
-    },
-    // params: {
-    //   ID: 16975,
-    // },
-  };
-  useEffect(() => {
+  const fetchStanding = () => {
+    const options = {
+      method: "GET",
+      url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
+      headers: {
+        "X-RapidAPI-Key": "30eac0cc41mshc3c64b153401231p173519jsna70ad75703ae",
+        "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
+      },
+    };
     axios
       .request(options)
-      .then((response) => {
-        console.log(response.data, "responseData");
-        setDataStanding(response.data);
-      })
-      .catch((error) => console.log(error));
+      .then((response) => response.data)
+      .then((data) => {
+        setDataStanding(data.data[0]);
+        console.log(data);
+      });
+  };
+  useEffect(() => {
+    fetchStanding();
   }, []);
-
-  console.log(dataStanding?.data?.[0].slug, "dataStanding");
-
-  const standings = dataStanding?.data?.map((data, index) => {
-    return (
-      <tr>
-        <td>{data.slug}</td>
-      </tr>
-    );
-  });
-
+  console.log(dataStanding, "STATE");
   return (
-    <>
-      <div className="calendar-contain">
-        <CalendarContainer />
-        {standings}
+    <div className="App">
+      <div>
+        <CustomizedTables dataStanding={dataStanding} />
       </div>
-    </>
+    </div>
   );
 }
-
-export default Calendar;
+export default App;

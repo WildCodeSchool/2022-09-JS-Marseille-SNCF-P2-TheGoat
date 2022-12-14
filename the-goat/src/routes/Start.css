@@ -1,3 +1,4 @@
+
 .start {
   display: flex;
   height: 100vh;
@@ -7,8 +8,9 @@
   font-size: 3rem;
   background-color: #161616;
   color: #d8c444;
+  
 }
-.start h2{
+.start h2 {
   margin-top: 0.5em;
   font-size: 2rem;
   letter-spacing: 0.3em;

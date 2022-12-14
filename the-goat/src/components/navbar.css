@@ -22,6 +22,7 @@
   font-size: 3rem;
   background-color: #161616;
   color: #fff;
+ 
 }
 
 /* Background Navbar */
@@ -45,6 +46,7 @@
 .navContainer {
   position: relative;
     z-index: 1;
+   
 }
 
 .navbar {

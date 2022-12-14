@@ -1,8 +1,10 @@
 import React from "react";
 import { Card, Box, CardContent, Typography } from "@mui/material";
-// import CustomizedTables from "./Table";
+import CustomizedTables from "./CustomizedTables";
 
-function StandingCards() {
+function StandingCards({
+  dataStanding
+}) {
   return (
     <Box
       sx={{
@@ -18,21 +20,11 @@ function StandingCards() {
             variant="h5"
             component="div"
             fontFamily="audiowide">
-            Western Conference 22/23
+            NBA 22/23
           </Typography>
-          <table>
-            <tr>
-              <th>#</th>
-              <th>Teams</th>
-              <th>Play</th>
-              <th>Win</th>
-              <th>Lose</th>
-              <th>PCT</th>
-              <th>GB</th>
-              <th>Str</th>
-            </tr>
-            
-          </table>
+          <CustomizedTables
+            {...dataStanding}
+          />
         </CardContent>
       </Card>
     </Box>

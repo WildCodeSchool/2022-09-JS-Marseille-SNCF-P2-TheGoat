@@ -4,10 +4,14 @@ import "./calendar-container.css";
 
 import "@fontsource/audiowide/400.css";
 
-function CalendarContainer() {
+function CalendarContainer({
+  dataStanding
+}) {
   return (
     <div className="calendar-container">
-      <StandingCards />
+      <StandingCards 
+     {...dataStanding}
+      />
     </div>
   );
 }
