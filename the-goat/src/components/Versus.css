@@ -70,19 +70,37 @@ p {
     flex-direction: row;
 }
 .Versus-legend{
-    height: 18em;
+    height: 32em;
     width: 18em;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+.Versus-legend-name{
+    padding: 2px;
+    height: 2em;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: -1px 2px #070707;
+    color: #ffffff;
+}
+.Image-Versus-legend{
+    height: 30em;
 }
 .Versus-legend-stats{
     border-color: #d8c444;
     border-style: solid;
     border-width: 2px;
-    background-color:#fdfdfd00;
+    background-color:#d8c44454;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 13em;
     height: 30em;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
@@ -101,12 +119,12 @@ p {
 }
 .Vote-versus-legend{
     border-color: #d8c444;
-    background-color: #7fffd400;
+    background-color: #d8c44454;
     text-shadow: -1px 2px #070707;
-    color:#d8c444;
-    width: 7em;
-    height: 3em;
-    font-size: 20px;
+    color: #ffffff;
+    width: 5em;
+    height: 2em;
+    font-size: 30px;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -114,20 +132,29 @@ p {
     border-color: #d8c444;
     border-style: solid;
     border-width: 2px;
-    background-color:#fdfdfd00;
+    background-color:#40564c7d;
+    text-align: right;
+    padding: 1px;
     width: 13em;
     height: 30em;
+    display: flex;
+    text-align: right;
+    padding: 1px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 
 }
 .Vote-versus-legend1{
     border-color: #d8c444;
-    background-color: #7fffd400;
+    background-color: #40564c7d;
     text-shadow: -1px 2px #070707;
-    color:#d8c444;
-    width: 7em;
-    height: 3em;
-    font-size: 20px;
+    color: #ffffff;
+    width: 5em;
+    height: 2em;
+    font-size: 30px;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -148,11 +175,23 @@ p {
     width: 100%;
 }
 .Versus-legend1{
-    height: 18em;
+    height: 32em;
     width: 18em;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+.Versus-legend1-name{
+    padding: 2px;
+    height: 2em;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: -1px 2px #070707;
+    color: #ffffff;
+}
+.Image-Versus-legend1{
+    height: 30em;
 }
