@@ -1,3 +1,13 @@
+
+data?.data?.[3]?.slug pour le nom de la division
+data?.data?.[3]?.standings_rows?.[]?.team?.logo pour le logo du club de la division.
+data?.data?.[3]?.standings_rows?.[]?.team?.slug pour le nom du club de la division, il y en a 5.
+
+extrait de code de roland:
+--------------------------
+
+
+
 // détails recherche api:
 ---------------------------------------------------------------------
 search par league:
