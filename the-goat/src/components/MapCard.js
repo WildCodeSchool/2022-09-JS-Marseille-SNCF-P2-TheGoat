@@ -1,13 +1,10 @@
 import React from 'react';
 import ButtonsVS from './ButtonsVS';
-// import CardData from './CardData';
+
 import CardLegend from './CardLegend';
 import CardData from './CardData';
 
-
-
-const MapCard = () => {
-    
+const MapCard = () => {    
     return (
       <div className="Card-Legend">
         {CardData.map((data, index) => (

@@ -9,7 +9,6 @@ import Kareem from './images/kareem-vignette.png';
 import Larry from './images/bird-vignette.png';
 import Allen from './images/allen_vignette2.png';
 
-
 const CardData = [
     {
         versus: {

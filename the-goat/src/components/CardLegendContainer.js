@@ -5,12 +5,8 @@ import './CardLegendContain';
 
 function CardLegendContainer(){
     return(
-        <div className='Card-legend-container'>
-                
-            <CardLegendContain />
-            
-            
-                            
+        <div className='Card-legend-container'>                
+            <CardLegendContain />                    
         </div>
     );
 }

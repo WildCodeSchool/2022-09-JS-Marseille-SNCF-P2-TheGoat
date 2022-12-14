@@ -7,5 +7,4 @@ function App() {
     <Featgames />
   );
 }
-
 export default App;
