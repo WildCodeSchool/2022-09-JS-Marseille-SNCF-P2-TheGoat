@@ -4,56 +4,80 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
+
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Audiowide from '../fonts/Audiowide-Regular.ttf'
-import './CardContain.css'
+import './CardContain.css';
+import "../components/Teams.css";
 
-export default function CardContain() {
+export default function CardContain({ dataStanding }) {
+  console.log(dataStanding, "DATASTANDING");
+
+  const compare = (x, y) => {
+    console.log(x.position - y.position, "compare");
+    return x.position - y.position;
+  };
+
+  const result = dataStanding?.standings_rows?.sort(compare);
+  console.log(result, "result");
+  
   return (
+
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', fontFamily:{Audiowide} }}>
-      <ListItem className='list-item'>
-        <ListItemAvatar className='list-avatar'>
-          <Avatar className='avatar'>
-            <ImageIcon className='image-icon'/>
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText  primary="Milwaukee Bucks" />
-      </ListItem>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <WorkIcon className='work-icon'/>
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Cleveland Cavaliers" />
-      </ListItem>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon className='beach-icon' />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Indiana Pacers" />
-      </ListItem>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Chicago Bulls" />
-      </ListItem>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <WorkIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Detroit Pistons" />
-      </ListItem>
-      <ListItem></ListItem>
+      
+      {dataStanding?.standings_rows?.map((dataStandingMap) => {
+              console.log(dataStandingMap, "INSIDE MAP");
+
+        return (
+        <ListItem className='list-item'>
+          <ListItemAvatar className='list-avatar'>
+            <Avatar className='avatar'>
+              <img
+              className='image-icon' 
+              src={dataStandingMap?.team?.logo}
+              alt="logo Team"/>
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText  primary={dataStandingMap?.team?.name_full} />
+        </ListItem>
+        /*<ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <WorkIcon className='work-icon'/>
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Cleveland Cavaliers" />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <BeachAccessIcon className='beach-icon' />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Indiana Pacers" />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Chicago Bulls" />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <WorkIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Detroit Pistons" />
+        </ListItem> */
+      
+        
+
+        );
+      })}
     </List>
-  );
+);
 }

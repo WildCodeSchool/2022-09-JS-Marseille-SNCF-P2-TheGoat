@@ -2,8 +2,7 @@ import React from 'react';
 import './Teams.css';
 import CardContain from './CardContain';
 import Map from './Map';
-// import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
-// import Map from '../assets/nba-map.jpg';
+import './CardContain.css';
 
 
 function Teams() {
@@ -22,7 +21,7 @@ function Teams() {
               
               <div className='card-teams'>
                     <div className='title-card'>
-                    Central Division  16977
+                    Central Division
                     </div>
                     <div className='list-card'>
                       <CardContain />
@@ -30,7 +29,7 @@ function Teams() {
               </div>
               <div className='card-teams'>
                     <div className='title-card'>
-                      Atlantic Division  16978
+                      Atlantic Division
                     </div>
                     <div className='list-card'>
                       <CardContain />
@@ -38,38 +37,39 @@ function Teams() {
               </div>
               <div className='card-teams'>
                     <div className='title-card'>
-                    Southeast Division  16979
+                    Southeast Division
                     </div>
                     <div className='list-card'>
                       <CardContain />
                     </div>
               </div>
             </div>
-            <div className='card-teams-container'>  
+            <div className='card-teams-container'> 
               <div className='card-teams'>
-                    <div className='title-card'>
-                    Northwest Division  16980
-                    </div>
-                    <div className='list-card'>
-                      <CardContain />
-                    </div>
-              </div>
-              <div className='card-teams'>
-                    <div className='title-card'>
-                    Pacific Division  16981
-                    </div>
-                    <div className='list-card'>
-                      <CardContain />
-                    </div>
-              </div>
-              <div className='card-teams'>
-                    <div className='title-card'>
-                    SouthwestDivision  16982
-                    </div>
-                    <div className='list-card'>
-                      <CardContain />
-                    </div>
-              </div>
+                      <div className='title-card'>
+                      Northwest Division
+                      </div>
+                      <div className='list-card'>
+                        <CardContain />
+                      </div>
+                </div> 
+                
+                <div className='card-teams'>
+                      <div className='title-card'>
+                      Pacific Division
+                      </div>
+                      <div className='list-card'>
+                        <CardContain />
+                      </div>
+                </div>
+                <div className='card-teams'>
+                      <div className='title-card'>
+                      SouthwestDivision
+                      </div>
+                      <div className='list-card'>
+                        <CardContain />
+                      </div>
+                </div>
               
             </div>
         </div>
@@ -81,3 +81,8 @@ function Teams() {
 }
 
 export default Teams;
+
+
+
+
+{/* <span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root">Milwaukee Bucks</span> */}
