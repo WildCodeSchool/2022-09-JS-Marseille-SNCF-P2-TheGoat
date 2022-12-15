@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Steph from './images/curry-vignette2.png';
+import Steph from './images/curry-vignette.png';
 import Kevin from './images/durant.png';
-import Michael from './images/jordan-vignette2.png';
-import Shaq from './images/shaq-vignette2.png';
+import Michael from './images/jordan-vignette.png';
+import Shaq from './images/shaq-vignette.png';
 import Magic from './images/magic_vignette.png';
 import Kareem from './images/kareem-vignette.png';
 import Larry from './images/bird-vignette.png';
-import Allen from './images/allen_vignette2.png';
+import Allen from './images/allen_vignette.png';
 
 const CardData = [
     {

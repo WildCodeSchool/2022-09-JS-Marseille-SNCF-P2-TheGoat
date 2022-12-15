@@ -1,10 +1,21 @@
+import React from 'react';
 import './App.css';
-import './components/Games.css';
-import Featgames from './components/Games.js';
+import "./components/StartVideo.css"
 
-function App() {
-  return (  
-    <Featgames />
+import StartButton from "./components/StartButton";
+import StartVideo from "./components/StartVideo";
+
+
+const App = () => {
+  return (
+    <div className="App"> 
+    <div>
+      <StartButton/>      
+    </div>
+    <div>
+      <StartVideo />
+    </div>
+    </div>
   );
 }
 export default App;
