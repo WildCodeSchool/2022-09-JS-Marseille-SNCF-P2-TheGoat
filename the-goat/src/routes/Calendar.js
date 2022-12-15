@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import CustomizedTables from "../components/CustomizedTables";
+import CustomizedTables2 from "../components/CustomizedTables-2";
 import axios from "axios";
 import "./Calendar.css";
-import CustomizedTables2 from "../components/CustomizedTables-2";
 
-function App() {
+
+function TableStanding() {
   const [dataStanding, setDataStanding] = useState();
 
   const fetchStanding = () => {
@@ -23,13 +24,12 @@ function App() {
         setDataStanding(data.data[1]);
         console.log(data);
       });
-      
   };
   useEffect(() => {
     fetchStanding();
   }, []);
   console.log(dataStanding, "STATE");
-  
+
   const [dataStanding2, setDataStanding2] = useState();
 
   const fetchStanding2 = () => {
@@ -48,7 +48,6 @@ function App() {
         setDataStanding2(data.data[2]);
         console.log(data);
       });
-      
   };
   useEffect(() => {
     fetchStanding2();
@@ -65,4 +64,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default TableStanding;
