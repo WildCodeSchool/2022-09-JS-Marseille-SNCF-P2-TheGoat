@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CustomizedTables from "../components/CustomizedTables";
 import axios from "axios";
-import CalendarContainer from "../components/CalendarContainer";
-import StandingCards from "../components/StandingCards";
-import TestTable from "./TestTable";
+import "./Calendar.css";
+import CustomizedTables2 from "../components/CustomizedTables-2";
 
 function App() {
   const [dataStanding, setDataStanding] = useState();
@@ -21,18 +20,47 @@ function App() {
       .request(options)
       .then((response) => response.data)
       .then((data) => {
-        setDataStanding(data.data[0]);
+        setDataStanding(data.data[1]);
         console.log(data);
       });
+      
   };
   useEffect(() => {
     fetchStanding();
   }, []);
   console.log(dataStanding, "STATE");
+  
+  const [dataStanding2, setDataStanding2] = useState();
+
+  const fetchStanding2 = () => {
+    const options = {
+      method: "GET",
+      url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
+      headers: {
+        "X-RapidAPI-Key": "30eac0cc41mshc3c64b153401231p173519jsna70ad75703ae",
+        "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
+      },
+    };
+    axios
+      .request(options)
+      .then((response) => response.data)
+      .then((data) => {
+        setDataStanding2(data.data[2]);
+        console.log(data);
+      });
+      
+  };
+  useEffect(() => {
+    fetchStanding2();
+  }, []);
+  console.log(dataStanding2, "STATE-2");
   return (
-    <div className="App">
-      <div>
+    <div className="calendar">
+      <div className="table-container">
         <CustomizedTables dataStanding={dataStanding} />
+      </div>
+      <div className="table-container">
+        <CustomizedTables2 dataStanding2={dataStanding2} />
       </div>
     </div>
   );

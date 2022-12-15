@@ -1,5 +1,27 @@
+.calendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .calendar-contain{
   display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 1em;
+}
+
+.table-container{
+  padding: 1em;
+}
+
+.logo-table{
+  width: 1.5em;
+}
+.calendar-title{
+  font-family: "Audiowide", sans-serif;
+  background-color: blue;
 }

@@ -28,21 +28,21 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedTables({ dataStanding }) {
-  console.log(dataStanding, "DATASTANDING");
+export default function CustomizedTables2({ dataStanding2 }) {
+  console.log(dataStanding2, "DATASTANDING-2");
 
   const compare = (x, y) => {
     console.log(x.position - y.position, "compare");
     return x.position - y.position;
   };
 
-  const result = dataStanding?.standings_rows?.sort(compare);
+  const result = dataStanding2?.standings_rows?.sort(compare);
   console.log(result, "result");
 
   return (
     <>
       <TableContainer className="tableContainer" component={Paper}>
-        <div className="calendar-title">NBA Eastern Conference 2022/2023</div>
+        <div className="calendar-title">NBA Western Conference 2022/2023</div>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead>
             <TableRow>
@@ -56,7 +56,7 @@ export default function CustomizedTables({ dataStanding }) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {dataStanding?.standings_rows?.map((dataStandingMap) => {
+            {dataStanding2?.standings_rows?.map((dataStandingMap) => {
               console.log(dataStandingMap, "INSIDE MAP");
 
               return (
