@@ -2,6 +2,7 @@ import React from 'react';
 
 import CardLegendContain from './CardLegendContain';
 import './CardLegendContain';
+import './CardLegendContainer.css';
 
 function CardLegendContainer(){
     return(

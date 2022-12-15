@@ -30,6 +30,10 @@
     text-align: center;
     font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
 }
+.playerImg{
+    height: 100%;
+    width: 100%;
+}
 .Card-legend1{
     height: 13em;
     width: 12em;

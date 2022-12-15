@@ -6,16 +6,16 @@
 	font-family: 'Audiowide';
         src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
     }
-.Card-legend-contain{
-    height: 13em;
-    width: 28em;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px;
-    flex-wrap: nowrap;
-}
+    .Card-legend-contain{
+        height: 14em;
+        width: 28em;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+        flex-wrap: nowrap;
+    }
 
     
