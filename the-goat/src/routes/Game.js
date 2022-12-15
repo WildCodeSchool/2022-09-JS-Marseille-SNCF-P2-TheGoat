@@ -1,11 +1,25 @@
-import React from "react";
+import React from 'react';
+import Header from '../components/Header';
+import PageButtons from '../components/PageButtons';
+import CardLegendContainer from '../components/CardLegendContainer';
+import '../components/Games.css';
+import '../components/Header.css';
+import '../components/PageButtons.css';
+import '../components/CardLegendContainer';
+import '../components/CardLegendContain';
 
-function Game (){
-  return (
-    <div className="game">
-      <h1>Game</h1>
-    </div>
-  )
-}
+function Games() {
+    return (
+        <div className="Games">
+          < Header />
+          <div className='Body-games'>
+            < CardLegendContainer />
+            < PageButtons />            
+          </div>         
 
-export default Game
+        </div>
+      );
+    }
+
+export default Games;
+
