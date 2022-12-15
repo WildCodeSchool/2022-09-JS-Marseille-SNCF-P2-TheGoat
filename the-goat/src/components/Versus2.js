@@ -1,6 +1,6 @@
 import React from 'react';
-import Kevin from "./images/durant.png";
-import Steph from './images/curry-vignette.png';
+import Michael from "./images/jordan-vignette.png";
+import Magic from './images/magic_vignette.png';
 import './Versus.css';
 
 
@@ -39,13 +39,13 @@ function Versus2() {
                 <button className='Vote-versus-legend'>Vote</button>
                 
                 <div className='Versus-legend'>
-                    <div className='Versus-legend-name'>Stephen Curry</div>                  
-                    <div className='Image-Versus-legend'><img src={Steph} className="playerImg"
+                    <div className='Versus-legend-name'>Michael Jordan</div>                  
+                    <div className='Image-Versus-legend'><img src={Michael} className="playerImg"
                      alt="image des joueurs"/></div>                                             
                 </div>
                 <div className='Versus-legend1'>
-                    <div className='Versus-legend1-name'>Kevin Durant</div>                    
-                    <div className='Image-Versus-legend1'><img src={Kevin} className="playerImg"
+                    <div className='Versus-legend1-name'>Magic Johnson</div>                    
+                    <div className='Image-Versus-legend1'><img src={Magic} className="playerImg"
                         alt="image des joueurs"/></div>                                               
                 </div>
                 
