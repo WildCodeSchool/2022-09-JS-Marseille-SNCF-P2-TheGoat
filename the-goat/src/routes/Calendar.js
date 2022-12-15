@@ -54,7 +54,7 @@ function TableStanding() {
   }, []);
   console.log(dataStanding2, "STATE-2");
   return (
-    <div className="calendar">
+    <div className="calendar-container">
       <div className="table-container">
         <CustomizedTables dataStanding={dataStanding} />
       </div>
