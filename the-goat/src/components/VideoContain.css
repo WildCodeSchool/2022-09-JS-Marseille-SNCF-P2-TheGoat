@@ -1,7 +1,8 @@
 .video-item{
     position:fixed;
-    top:18%;
-    left:32%;
+    top:15%;
+    left:30%;
+    z-index: 1;
 
 
 }
