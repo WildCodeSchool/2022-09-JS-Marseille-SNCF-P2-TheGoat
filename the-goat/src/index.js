@@ -1,6 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
 import Stats from "./routes/Stats";
 import Home from "./routes/Home";
 import Game from "./routes/Game";
@@ -10,8 +14,10 @@ import Features from "./routes/Features";
 import Start from "./routes/Start";
 import Navbar from "./components/Navbar";
 import "./components/Navbar.css";
-import "./App.css"
+import "./App.css";
 import Calendar from "./routes/Calendar";
+
+
 
 const AppLayout = () => (
   <>

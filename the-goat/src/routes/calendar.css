@@ -1,31 +1,53 @@
 @import "@fontsource/audiowide";
 
-.calendar-container{
+.calendar-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../components/image/jordanfond.jpg');
+  background-image: url("../components/image/jordanfond.jpg");
+  padding-top: 3em;
 }
 
-
-
-
-.table-container{
+.table-container {
   padding: 1em;
   width: 50%;
 }
 
-.logo-table{
+.logo-table {
   width: 1.5em;
 }
-.calendar-title{
-  background-color: #000;
+.calendar-title {
+  background-image: url("../components/images/ballon-parquet.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, contain;
   font-family: "Audiowide", sans-serif;
   color: #fff;
-  padding-left: 0.2em;
+  padding: 1em;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-align: center;
+  border-bottom: solid 1px;
+}
 
+.tableRow {
+  color: #161616;
+  opacity: 1;
+}
+
+.tableRow th  {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+
+@media screen and (max-width: 950px) {
+  .calendar-container {
+    flex-direction: column;
+  }
+  .table-container {
+    width: 100%;
+  }
 }

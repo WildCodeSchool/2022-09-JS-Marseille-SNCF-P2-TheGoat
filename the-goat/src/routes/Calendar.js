@@ -3,7 +3,7 @@ import CustomizedTables from "../components/CustomizedTables";
 import CustomizedTables2 from "../components/CustomizedTables-2";
 import axios from "axios";
 import "./Calendar.css";
-
+import Header from "../components/Header";
 
 function TableStanding() {
   const [dataStanding, setDataStanding] = useState();
@@ -13,7 +13,7 @@ function TableStanding() {
       method: "GET",
       url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
       headers: {
-        "X-RapidAPI-Key": "30eac0cc41mshc3c64b153401231p173519jsna70ad75703ae",
+        "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
         "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
       },
     };
@@ -22,13 +22,11 @@ function TableStanding() {
       .then((response) => response.data)
       .then((data) => {
         setDataStanding(data.data[1]);
-        console.log(data);
       });
   };
   useEffect(() => {
     fetchStanding();
   }, []);
-  console.log(dataStanding, "STATE");
 
   const [dataStanding2, setDataStanding2] = useState();
 
@@ -37,7 +35,7 @@ function TableStanding() {
       method: "GET",
       url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
       headers: {
-        "X-RapidAPI-Key": "30eac0cc41mshc3c64b153401231p173519jsna70ad75703ae",
+        "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
         "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
       },
     };
@@ -46,22 +44,24 @@ function TableStanding() {
       .then((response) => response.data)
       .then((data) => {
         setDataStanding2(data.data[2]);
-        console.log(data);
       });
   };
   useEffect(() => {
     fetchStanding2();
   }, []);
-  console.log(dataStanding2, "STATE-2");
+
   return (
-    <div className="calendar-container">
-      <div className="table-container">
-        <CustomizedTables dataStanding={dataStanding} />
+    <>
+      <Header />
+      <div className="calendar-container">
+        <div className="table-container">
+          <CustomizedTables dataStanding={dataStanding} />
+        </div>
+        <div className="table-container">
+          <CustomizedTables2 dataStanding2={dataStanding2} />
+        </div>
       </div>
-      <div className="table-container">
-        <CustomizedTables2 dataStanding2={dataStanding2} />
-      </div>
-    </div>
+    </>
   );
 }
 export default TableStanding;
