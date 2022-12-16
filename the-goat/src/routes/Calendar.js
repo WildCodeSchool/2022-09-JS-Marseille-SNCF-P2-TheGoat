@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CustomizedTables from "../components/CustomizedTables";
 import CustomizedTables2 from "../components/CustomizedTables-2";
 import axios from "axios";
-import "./Calendar.css";
+import "./calendar.css";
 import Header from "../components/Header";
 
 function TableStanding() {

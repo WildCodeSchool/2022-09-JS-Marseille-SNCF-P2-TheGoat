@@ -5,12 +5,11 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import Stats from "./routes/Stats";
 import Home from "./routes/Home";
 import Game from "./routes/Game";
-import Team from "./routes/Team";
+// import Team from "./routes/Team";
 import Versus from "./routes/Versus";
-import Features from "./routes/Features";
+// import Features from "./routes/Features";
 import Start from "./routes/Start";
 import Navbar from "./components/Navbar";
 import "./components/Navbar.css";
@@ -38,10 +37,6 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "stats",
-        element: <Stats />,
-      },
-      {
         path: "game",
         element: <Game />,
       },
@@ -49,18 +44,18 @@ const router = createBrowserRouter([
         path: "calendar",
         element: <Calendar />,
       },
-      {
-        path: "team",
-        element: <Team />,
-      },
+      // {
+      //   path: "team",
+      //   element: <Team />,
+      // },
       {
         path: "versus",
         element: <Versus />,
       },
-      {
-        path: "features",
-        element: <Features />,
-      },
+      // {
+      //   path: "features",
+      //   element: <Features />,
+      // },
     ],
   },
 ]);
