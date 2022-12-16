@@ -4,6 +4,7 @@ import CardContain from "../components/CardContain";
 import axios from "axios";
 import "../components/Team.css";
 import Map from '../components/Map';
+import Header from "../components/Header";
 
 function Team (){
     const [dataStanding, setDataStanding] = useState();
@@ -162,12 +163,7 @@ const [dataStanding6, setDataStanding6] = useState();
 
     return (
         <div className="teams">
-            <header className="teams-header">
-                <h1 className='teams-main-header'>Teams</h1>
-                <div className='Onegoat'>
-                <h2 className='title'>One G.O.A.T</h2>
-                </div>
-            </header>
+            <Header/>
             <div className='body-teams' >
                 <div className='card-teams-container'>
                 

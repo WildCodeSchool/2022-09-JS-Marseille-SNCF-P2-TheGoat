@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home";
 import Game from "./routes/Game";
-// import Team from "./routes/Team";
+import Team from "./routes/Team";
 import Versus from "./routes/Versus";
 // import Features from "./routes/Features";
 import Start from "./routes/Start";
@@ -45,10 +45,10 @@ const router = createBrowserRouter([
         path: "calendar",
         element: <Calendar />,
       },
-      // {
-      //   path: "team",
-      //   element: <Team />,
-      // },
+      {
+        path: "team",
+        element: <Team />,
+      },
       {
         path: "versus",
         element: <Versus />,
