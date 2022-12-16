@@ -1,64 +1,17 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Stats from "./routes/Stats";
-import Home from "./routes/Home";
-import Game from "./routes/Game";
-import Season from "./routes/Season";
-import Team from "./routes/Team";
-import Versus from "./routes/Versus";
-import Features from "./routes/Features";
-import Start from "./routes/Start";
-import Navbar from "./components/Navbar";
-import "./components/Navbar.css";
-import "./App.css"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const AppLayout = () => (
-  <>
-    <Navbar />
-    <Outlet />
-  </>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-const router = createBrowserRouter([
-  {
-    element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Start />,
-      },
-      {
-        path: "/home",
-        element: <Home />,
-      },
-      {
-        path: "stats",
-        element: <Stats />,
-      },
-      {
-        path: "game",
-        element: <Game />,
-      },
-      {
-        path: "season",
-        element: <Season />,
-      },
-      {
-        path: "team",
-        element: <Team />,
-      },
-      {
-        path: "versus",
-        element: <Versus />,
-      },
-      {
-        path: "features",
-        element: <Features />,
-      },
-    ],
-  },
-]);
 
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
