@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Start.css";
+import "./Start.css";
 import { Link } from "react-router-dom";
 
 function Start() {
