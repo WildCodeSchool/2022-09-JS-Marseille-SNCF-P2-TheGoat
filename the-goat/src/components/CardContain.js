@@ -4,12 +4,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
-
-// import WorkIcon from '@mui/icons-material/Work';
-// import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Audiowide from '../fonts/Audiowide-Regular.ttf'
-import './CardContain.css';
-import "../components/Teams.css";
+import "../components/Team.css";
+import ('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 
 export default function CardContain({ dataStanding }) {
@@ -48,9 +45,12 @@ export default function CardContain({ dataStanding }) {
             </Avatar>
           </ListItemAvatar>
           <ListItemText
+            className='text-icon'
             primary={dataStandingMap?.team?.name_full}
             sx={{marginLeft:"1em"}}
-            
+            slotProps={{ thumb: { className: 'thumb' } }}
+                   
+
              />
         
         

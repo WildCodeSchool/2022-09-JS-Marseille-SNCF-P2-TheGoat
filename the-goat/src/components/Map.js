@@ -1,5 +1,5 @@
 import React from 'react';
-import './Teams.css';
+import './Team.css';
 
 import MapImg from '../assets/nba-map.jpg';
 import { useState } from "react";

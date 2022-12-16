@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from "react";
 import CardContain from "../components/CardContain";
 import axios from "axios";
-import "../components/Teams.css";
-import '../components/CardContain.css';
-// import CustomizedTables2 from "../components/CustomizedTables-2";
+import "../components/Team.css";
 import Map from '../components/Map';
 
 function Team (){
