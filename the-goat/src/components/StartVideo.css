@@ -1,14 +1,6 @@
-.toogleBtn img{
-    width: 7%;
-    position: absolute;
-    top: 56%;
-    right: 47%;
-    cursor: pointer;
-
+.toogleBtn img {
+  width: 60%;
+  cursor: pointer;
+  margin-left: 25%;
+  filter: drop-shadow(0px 0px 19px #fff);
 }
-
- 
-
-   
-
-

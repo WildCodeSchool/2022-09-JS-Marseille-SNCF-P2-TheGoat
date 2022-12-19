@@ -1,7 +1,6 @@
-.Button img{
-  position: absolute;
-  top: 30%;
-  right: 37%;
-  width: 7%;
-  
+.Button img {
+  width: 60%;
+  margin-left: 25%;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 19px #fff);
 }

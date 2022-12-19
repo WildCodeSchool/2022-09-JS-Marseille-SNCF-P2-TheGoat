@@ -4,16 +4,19 @@ import StartVideo from "../components/StartVideo";
 
 import "./Home.css";
 
-
-function Home (){
+function Home() {
   return (
-    <>
-    <div className="bghome"  >
-        <StartVideo/>
-        <StartButton/>
+    <div className="home-container">
+      <div className="bghome"></div>
+      <div className="button-container">
+        <StartVideo />
+        <div className="title-home">
+        <h1>The G.O.A.T</h1>
+        </div>
+        <StartButton />
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default Home
+export default Home;

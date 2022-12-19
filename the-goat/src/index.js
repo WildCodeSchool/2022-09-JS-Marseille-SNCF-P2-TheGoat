@@ -53,6 +53,7 @@ const router = createBrowserRouter([
         path: "versus",
         element: <Versus />,
       },
+      
       // {
       //   path: "features",
       //   element: <Features />,
