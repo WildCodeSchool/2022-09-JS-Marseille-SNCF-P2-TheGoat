@@ -14,7 +14,7 @@ function Team (){
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -23,14 +23,14 @@ function Team (){
         .then((response) => response.data)
         .then((data) => {
           setDataStanding(data.data[3]);
-          console.log(data);
+          
         });
         
     };
     useEffect(() => {
       fetchStanding();
     }, []);
-    console.log(dataStanding, "STATE");
+    
 //-----------------------------------------------------------------    
     const [dataStanding2, setDataStanding2] = useState();
   
@@ -39,7 +39,7 @@ function Team (){
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -48,14 +48,14 @@ function Team (){
         .then((response) => response.data)
         .then((data) => {
           setDataStanding2(data.data[4]);
-          console.log(data);
+        
         });
         
     };
     useEffect(() => {
       fetchStanding2();
     }, []);
-    console.log(dataStanding2, "STATE-2");
+   
 //------------------------------------------------------------
 
 const [dataStanding3, setDataStanding3] = useState();
@@ -65,7 +65,7 @@ const [dataStanding3, setDataStanding3] = useState();
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -74,14 +74,14 @@ const [dataStanding3, setDataStanding3] = useState();
         .then((response) => response.data)
         .then((data) => {
           setDataStanding3(data.data[5]);
-          console.log(data);
+         
         });
         
     };
     useEffect(() => {
       fetchStanding3();
     }, []);
-    console.log(dataStanding3, "STATE-3");
+   
 //------------------------------------------------------------
 
 const [dataStanding4, setDataStanding4] = useState();
@@ -91,7 +91,7 @@ const [dataStanding4, setDataStanding4] = useState();
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -100,14 +100,14 @@ const [dataStanding4, setDataStanding4] = useState();
         .then((response) => response.data)
         .then((data) => {
           setDataStanding4(data.data[6]);
-          console.log(data);
+  
         });
         
     };
     useEffect(() => {
       fetchStanding4();
     }, []);
-    console.log(dataStanding4, "STATE-4");
+    
 //------------------------------------------------------------
 
 const [dataStanding5, setDataStanding5] = useState();
@@ -117,7 +117,7 @@ const [dataStanding5, setDataStanding5] = useState();
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -126,14 +126,13 @@ const [dataStanding5, setDataStanding5] = useState();
         .then((response) => response.data)
         .then((data) => {
           setDataStanding5(data.data[7]);
-          console.log(data);
-        });
+            });
         
     };
     useEffect(() => {
       fetchStanding5();
     }, []);
-    console.log(dataStanding5, "STATE-5");
+    
 //------------------------------------------------------------
 
 const [dataStanding6, setDataStanding6] = useState();
@@ -143,7 +142,7 @@ const [dataStanding6, setDataStanding6] = useState();
         method: "GET",
         url: "https://sportscore1.p.rapidapi.com/seasons/21630/standings-tables",
         headers: {
-          "X-RapidAPI-Key": "92af1b4e9emsh6034f2ef537bdbdp120636jsnd456f52028d0",
+          "X-RapidAPI-Key": "ef6debeca2mshe1ded1cdb40ce43p13cd35jsncc57eb401a86",
           "X-RapidAPI-Host": "sportscore1.p.rapidapi.com",
         },
       };
@@ -152,14 +151,12 @@ const [dataStanding6, setDataStanding6] = useState();
         .then((response) => response.data)
         .then((data) => {
           setDataStanding6(data.data[8]);
-          console.log(data);
-        });
-        
+        });        
     };
     useEffect(() => {
       fetchStanding6();
     }, []);
-    console.log(dataStanding6, "STATE-6");
+    
 
     return (
         <div className="teams">

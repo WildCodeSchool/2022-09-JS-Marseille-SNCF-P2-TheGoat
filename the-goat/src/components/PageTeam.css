@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.header-team{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 15em;
+    width: auto;
+    margin-bottom: 1em;
+    
+}
+/* ...................*/
+.team-logo{
+    background-image: url(./assets/image/Logo-Chicago-Bulls.png);
+    background-position: center center;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 15em;
+    height: auto;
+    display: flex;
+    border-color: #d8c444;
+    border-style: solid;
+    margin: 1%;    
+}
+/* ...................*/
+.header-contain{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    width:100em;
+    
+}
+/*--------*/
+.team-name-burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    font-family: 'Audiowide';
+    font-size: 2em;
+    
+}
+.team-name{
+    display:flex;
+    border-style: solid;
+    width: 30em;
+    height: 4em;
+    
+    border-color: #d8c444;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Audiowide';
+      
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.team-burger{
+    display:flex;
+    border-style: solid;
+    width: 10em;
+    height: 1em;
+   
+    border-color: #d8c444;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.team-navbar{
+    display:flex;
+    border-style: solid;
+    border-color: #d8c444;
+    
+    height: auto;
+    
+    font-family: 'Audiowide';
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+/* ..........................................*/
+.main-contain-team{
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 1em;
+    border-color: #d8c444;
+    margin: 1%;
+    font-family: 'Audiowide';
+    font-size: 2em;
+}
+/* ...................*/
+.team-title{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1%;
+    border-style: solid;
+    padding: 1em;
+    border-color: #d8c444;
+}
+/* ...................*/
+.contain-stat-player{
+    display:flex;
+    flex-direction: row;
+}
+/*--------*/
+.player-card{
+    display:flex;
+    flex-direction: column;
+    
+    height: 17em;
+    margin-right: 1%;
+}
+.player-img{
+    background-image: url(./components/image/Michael\ Jordan-Card.jpg);
+    background-position: center center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 10em;
+    height: 100%;
+    display: flex;
+    border-color: #d8c444;
+    border-style: solid;
+      
+}
+.player-name{
+    display:flex;
+    border-color: #d8c444;
+    border-style: solid;
+    width: 10em;
+    height: 2em;
+    margin-top: 2%;
+    
+    align-items: center;
+    justify-content: center;
+}
+/*--------*/
+.stat-container{
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border-color: #d8c444;
+    border-style: solid;
+    
+    
+    width: 50em;
+    height: 17em;
+       
+
+}
+
+table{
+    border-collapse: collapse;
+    margin: 1%;
+    width: 98%;
+    height: 100%;
+    
+  }
+  
+  th{
+    border: 1px solid black;
+    padding: 10px;
+    
+  }
+  td{
+    border: 1px solid black;
+    padding: 10px;
+    height: 13em;
+  }

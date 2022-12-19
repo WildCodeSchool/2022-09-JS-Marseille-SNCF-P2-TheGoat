@@ -8,6 +8,7 @@ function Header() {
   const splitUrl = location?.pathname.replace("/","" );
 
 
+
   return (
     <header className="Header">
       <div  className="Header-main-title"><h1>{splitUrl.toUpperCase()}</h1></div>
