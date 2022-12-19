@@ -1,11 +1,12 @@
 import React from "react";
-import "../components/Start.css";
+import "./Start.css";
 import { Link } from "react-router-dom";
 
 function Start() {
   return (
     <>
       <div className="start">
+        
         <h1>
           <span className="title-start-t-1">t</span>
           <span className="title-start-h">h</span>

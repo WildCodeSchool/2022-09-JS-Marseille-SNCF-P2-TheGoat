@@ -2,21 +2,13 @@ import React from 'react';
 import Kevin from "./images/durant.png";
 import Steph from './images/curry-vignette.png';
 import './Versus.css';
+import Header from './Header';
 
 
 function Versus() {
     return (
         <div className="Versus">
-          <header className="Versus-header">
-            <h1 className='Versus-main-title'>Versus</h1>
-            <div className='Onegoat'>
-              <h2 className='Versus-title'>One G.O.A.T</h2>
-              <div className='Versus-subtitle'>
-              <p>32 Legends</p>
-              <p>First Week</p>
-              </div>
-            </div>            
-          </header>
+          <Header/>
           <div className='Body-versus'>
             <div className='Versus-legend-container'>
                 <div className='Versus-legend-stats'>

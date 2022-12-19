@@ -1,11 +1,11 @@
 import React from 'react';
-import "../components/StartVideo.css";
-import VideoContain from "../components/VideoContain";
+import "../components/Teams.css";
+import Map from "../components/Map";
 import { useState } from "react";
-import ballon from "../assets/image/ballon-playvideo.png";
+import logo from "../assets/image/04_maps.png";
 
 
-function StartVideo() {
+function StartMap() {
     
       const [content, setContent] = useState(false);
     
@@ -16,16 +16,17 @@ function StartVideo() {
       return (
         
           <>
-            <div className="toogleBtn">
-                <img onClick={toggleContent} src={ballon} alt=""/>
+           
+                <img className='MapButton' onClick={toggleContent} src={logo} alt=""/>
                 {content && (
                     
-                     <VideoContain />
+                     <Map />
                     
                 )}
-            </div>
+                
+            
           </>
       );
     }
     
-    export default StartVideo;
+export default StartMap;
