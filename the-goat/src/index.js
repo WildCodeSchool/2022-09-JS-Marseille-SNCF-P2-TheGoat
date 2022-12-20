@@ -10,6 +10,7 @@ import Home from "./routes/Home";
 import Game from "./routes/Game";
 import Team from "./routes/Team";
 import Versus from "./routes/Versus";
+import BostonCeltics from "./routes/BostonCeltics";
 // import Features from "./routes/Features";
 import Start from "./routes/Start";
 import Navbar from "./components/Navbar";
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "versus",
         element: <Versus />,
+      },
+      {
+        path: "Boston",
+        element: <BostonCeltics />,
       },
       
       // {

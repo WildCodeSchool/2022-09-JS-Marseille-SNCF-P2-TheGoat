@@ -6,31 +6,22 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Audiowide from '../fonts/Audiowide-Regular.ttf'
 import "../components/Team.css";
+import { Link } from "react-router-dom";
 import ('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 
-export default function CardContain({ dataStanding }) {
-  console.log(dataStanding, "DATASTANDING");
-
-  const compare = (x, y) => {
-    console.log(x.position - y.position, "compare");
-    return x.position - y.position;
-  };
-
-  const result = dataStanding?.standings_rows?.sort(compare);
-  console.log(result, "result");
+export default function CardContain({ dataStanding }) { 
   
   return (
 
     <List sx={{ width: '100%', maxWidth: 400, bgcolor: 'background.paper', fontFamily:{Audiowide} }}>
       
-      {dataStanding?.standings_rows?.map((dataStandingMap) => {
-              console.log(dataStandingMap, "INSIDE MAP");
-
+      {dataStanding?.standings_rows?.map((dataStandingMap) => {              
         return (
-       <>
+       <>       
        <div>
-        <ListItem className='list-item'>
+       <Link to="/Boston" >       
+        <ListItem className='list-item'>        
           <ListItemAvatar className='list-avatar'>
             <Avatar className='avatar' 
               sx={{ width: 50, height: 50, marginRight:'1em', marginLeft:'2em'}}
@@ -42,25 +33,18 @@ export default function CardContain({ dataStanding }) {
               sx={{ width: 62, height: 62, }}
               slotProps={{ thumb: { className: 'thumb' } }}
               />
-            </Avatar>
-          </ListItemAvatar>
+            </Avatar>            
+          </ListItemAvatar>          
           <ListItemText
             className='text-icon'
             primary={dataStandingMap?.team?.name_full}
             sx={{marginLeft:"1em"}}
-            slotProps={{ thumb: { className: 'thumb' } }}
-                   
-
-             />
-        
-        
+            slotProps={{ thumb: { className: 'thumb' } }}                
+          />  
         </ListItem>
-        </div>
-        
-        </>
-
-        
-
+        </Link> 
+        </div>              
+        </>      
         );
       })}
     </List>
