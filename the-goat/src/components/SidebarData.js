@@ -31,10 +31,4 @@ export const SidebarData = [
     icons: <AiIcons.AiOutlineTeam />,
     cName: "nav-text",
   },
-  {
-    title: "Features",
-    path: "/features",
-    icons: <MdIcons.MdFeaturedVideo />,
-    cName: "nav-text",
-  },
 ];

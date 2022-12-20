@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import PageButtons from '../components/PageButtons';
 import CardLegendContainer from '../components/CardLegendContainer';
 import '../components/Games.css';
-import '../components/Header.css';
 import '../components/PageButtons.css';
 import '../components/CardLegendContainer';
 import '../components/CardLegendContain';

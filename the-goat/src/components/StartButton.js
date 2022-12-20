@@ -1,5 +1,6 @@
 import './StartButton.css';
 import { Link } from "react-router-dom";
+import startBallon from "../assets/ballon-startgame.png"
 
 function StartButton () {
   return (
@@ -7,7 +8,7 @@ function StartButton () {
       <>
         <div className='Button'>
         <Link to="/Game">
-          <button className='myButton' />
+          <img src={startBallon} />
         </Link>
         </div>
       </>
@@ -17,3 +18,12 @@ function StartButton () {
 
 
 export default StartButton;
+
+{/* <div className="toogleBtn">
+                <img onClick={toggleContent} src={ballon} alt=""/>
+                {content && (
+                    
+                     <VideoContain />
+                    
+                )}
+            </div> */}

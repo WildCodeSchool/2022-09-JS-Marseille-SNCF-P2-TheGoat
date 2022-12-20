@@ -22,3 +22,12 @@
     color: #d8c444;
     border-color: #d8c444;
 }
+
+/* MEDIA QUERIES */
+/* @media screen and (min-width: 767px) and (max-width: 1023px) {
+    .GamesPageButtons{
+        position: sticky;
+        bottom: 2em;
+    }
+
+} */
