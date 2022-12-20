@@ -31,7 +31,7 @@ function Versus() {
           <div className="Versus-legend">
             <div className="Versus-legend-name">Stephen Curry</div>
             <div className="Image-Versus-legend">
-              <img src={Steph} className="playerImg" alt="image des joueurs" />
+              <img src={Steph} className="playerImg" alt="img des joueurs" />
             </div>
             <button className="Vote-versus-legend">Vote</button>
           </div>
@@ -40,7 +40,7 @@ function Versus() {
           <div className="Versus-legend1">
             <div className="Versus-legend1-name">Kevin Durant</div>
             <div className="Image-Versus-legend1">
-              <img src={Kevin} className="playerImg" alt="image des joueurs" />
+              <img src={Kevin} className="playerImg" alt="img des joueurs" />
             </div>
             <button className="Vote-versus-legend1">Vote</button>
           </div>

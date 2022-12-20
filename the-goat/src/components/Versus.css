@@ -32,16 +32,16 @@
 }
 .Body-versus {
   
-  height: 100%;
-  padding-bottom: 0.3em;
+  height: 100%;  
   display: flex;
   justify-content: space-around;
   width: 100%;
+  
 }
 .Versus-legend-container, .Versus-legend1-container {
   border-color: #d8c444;
-  height: 38em;
-  width: 50rem;
+  height: 50.5em;
+  width: 50%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -151,7 +151,7 @@
   height: 2em;
   font-size: 30px;
   font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
-}
+  }
 .Name-versus-legend {
   background-color: #d8c444;
   width: 100%;
@@ -194,6 +194,7 @@
   .Versus-legend-name,
   .Versus-legend1-name {
     font-size: 19px;
+    
   }
   .Image-Versus-legend, .Image-Versus-legend1{
     height: 20em;
@@ -214,4 +215,11 @@
       .Versus-legend, .Versus-legend1{
         justify-content: space-evenly;
      }
+     .Versus-legend-container, .Versus-legend1-container{
+        height: 36em
+     }
+}
+button:active {
+    background-color: #d8c444;
+    outline: none; /* Pour enlever la bordure bleu */
 }
