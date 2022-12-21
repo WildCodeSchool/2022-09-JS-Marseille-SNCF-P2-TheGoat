@@ -49,17 +49,17 @@ function Versus() {
           <div className="Versus-legend1-stats">
             <h3 className="Stats-h3">Stats Legend</h3>
             <br />
-            <p>Points: 30</p>
+            <p>Points: 41</p>
             <br />
-            <p>3 Points: 15</p>
+            <p>3 Points: 12</p>
             <br />
-            <p>2 Points: 18</p>
+            <p>2 Points: 22</p>
             <br />
-            <p>Free Throw % : 85.9</p>
+            <p>Free Throw % : 84</p>
             <br />
-            <p>Wins : 14</p>
+            <p>Wins : 17</p>
             <br />
-            <p>Loss : 12</p>
+            <p>Loss : 10</p>
             <br />
             <p>Championship : 4</p>
           </div>

@@ -102,8 +102,10 @@ h2{
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    
   }
+  
   
 .teamsMapButtons{
     display: flex;
@@ -140,11 +142,10 @@ h2{
 .thumb{
   width: 3em;
   height: 3em;
-  
-  
 
 }
 .image-icon{
   width: 3em;
   height: 3em;
+
 }
