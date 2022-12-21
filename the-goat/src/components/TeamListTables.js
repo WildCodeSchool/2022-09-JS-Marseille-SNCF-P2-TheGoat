@@ -25,7 +25,7 @@ export default function TeamListTables({ teamListStanding }) {
         sx={{ witdh: 500 }}
         className="tableContainer"
         component={Paper}>
-        <div className="calendar-title">Boston Celtics</div>
+        <div className="team-title">Boston Celtics</div>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead>
             <TableRow className="tableRow">

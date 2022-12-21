@@ -8,18 +8,23 @@
   background-image: url("../components/image/jordanfond.jpg");
   padding-top: 3em;
 }
-
 .table-list-container {
   padding: 1em;
-  width: 100%;
+  width: 80%;
 }
-
+.team-list-container {
+  display: flex;
+  justify-content: center;
+  background-image: url("../components/image/jordanfond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .picture-table {
   width: 5em;
   justify-content: space-around;
 }
-.calendar-title {
-  background-image: url("../components/images/ballon-parquet.jpg");
+.team-title {
+  background-color: #008348;
   background-repeat: no-repeat;
   background-size: 100%, contain;
   font-family: "Audiowide", sans-serif;
@@ -37,12 +42,11 @@
   opacity: 1;
 }
 
-.tableRow th  {
+.tableRow th {
   font-family: "Audiowide", sans-serif;
   text-transform: uppercase;
   font-size: 1em;
 }
-
 
 @media screen and (max-width: 950px) {
   .calendar-container {

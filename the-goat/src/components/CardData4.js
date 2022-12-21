@@ -1,27 +1,28 @@
 import React from 'react';
 
-import Dirk from './images/Dirk-vignette.png';
+import Carter from './images/carter-vignette.png';
 import Carmelo from './images/carmelo-vignette.png';
-import English from './images/english-vignette.png';
+import Jordan from './images/jordan-vignette.png';
 import Harden from './images/harden-vignette.png';
-import Hayes from './images/hayes-vignette.png';
+import Magic from './images/magic_vignette.png';
 import Iverson from './images/iverson-vignette.png';
 import Malone from './images/malone-vignette1.png';
 import Wade from './images/wade-vignette.png';
+import Curry from './images/curry-vignette.png';
 
 
-const CardData2 = [
+const CardData4 = [
     {
         versus: {
             playerOne: {
                 id: 0,
-                image: Dirk,
-                name: "Dirk Nowitzki", 
+                image: Carter,
+                name: "Vince Carter", 
                 },
             playerTwo: {
                 id: 1,
-                image: Malone,
-                name: "Karl Malone", 
+                image: Carmelo,
+                name: "Carmelo Anthony", 
                 }   
         }    
     },
@@ -29,36 +30,36 @@ const CardData2 = [
         versus: {
             playerOne: {
                 id: 0,
-                image: English,
-                name: "Alex English",  
+                image: Jordan,
+                name: "Michael Jordan",  
             },      
             playerTwo: {
                 id: 1,
-                image: Wade,
-                name: "Dwayne Wade",        
-        },
-        }
-    },
-    {
-        versus: {
-            playerOne: {
-                id: 0,
-                image: Carmelo,
-                name: "Carmello Anthony",  
-            },      
-            playerTwo: {
-                id: 1,
-                image: Hayes,
-                name: "Elvin Hayes",        
-        },
-        }
-    },
-    {
-        versus: {
-            playerOne: {
-                id: 0,
                 image: Harden,
-                name: "James Harden",  
+                name: "James Harden",        
+        },
+        }
+    },
+    {
+        versus: {
+            playerOne: {
+                id: 0,
+                image: Wade,
+                name: "James Wade",  
+            },      
+            playerTwo: {
+                id: 1,
+                image: Magic,
+                name: "Magic Johnson",        
+        },
+        }
+    },
+    {
+        versus: {
+            playerOne: {
+                id: 0,
+                image: Curry,
+                name: "Stephen Curry",  
             },      
             playerTwo: {
                 id: 1,
@@ -69,4 +70,4 @@ const CardData2 = [
     }
 ];
 
-export default CardData2;
+export default CardData4;
