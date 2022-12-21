@@ -1,0 +1,58 @@
+@import "@fontsource/audiowide";
+
+.calendar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../components/image/jordanfond.jpg");
+  padding-top: 3em;
+}
+.table-list-container {
+  padding: 1em;
+  width: 80%;
+}
+.team-list-container {
+  display: flex;
+  justify-content: center;
+  background-image: url("../components/image/jordanfond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.picture-table {
+  width: 5em;
+  justify-content: space-around;
+}
+.team-title {
+  background-color: #008348;
+  background-repeat: no-repeat;
+  background-size: 100%, contain;
+  font-family: "Audiowide", sans-serif;
+  color: #fff;
+  padding: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  border-bottom: solid 1px;
+}
+
+.tableRow {
+  color: #161616;
+  opacity: 1;
+}
+
+.tableRow th {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 950px) {
+  .calendar-container {
+    flex-direction: column;
+  }
+  .table-container {
+    width: 100%;
+  }
+}

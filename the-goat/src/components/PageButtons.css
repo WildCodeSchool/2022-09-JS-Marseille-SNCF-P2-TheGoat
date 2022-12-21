@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Audiowide';
+        src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
+    }
+.GamesPageButtons{
+    display: flex;
+    background-color: #7fffd408;
+    flex-direction: row;
+    justify-content: center;
+}
+.PageButtons{
+    height: 2em;
+    width: 2em;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcfafa00;
+    color: #d8c444;
+    border-color: #d8c444;
+}
+
+/* MEDIA QUERIES */
+/* @media screen and (min-width: 767px) and (max-width: 1023px) {
+    .GamesPageButtons{
+        position: sticky;
+        bottom: 2em;
+    }
+
+} */

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Audiowide";
+  src: url(./fonts/Audiowide-Regular.ttf) format(truetype);
+}
+
+.Versus-main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 35%;
+  font-size: 80px;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+}
+.Versus-subtitle {
+  width: 20em;
+  display: flex;
+  justify-content: space-around;
+}
+.Onegoat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Versus {
+  height: 100%;
+}
+.Body-versus {
+  
+  height: 100%;  
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+}
+.Versus-legend-container, .Versus-legend1-container {
+  border-color: #d8c444;
+  height: 38.5em;
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.Versus-legend-container{
+    background-image: url("./images/versusBG-left.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Versus-legend1-container{
+    background-image: url("./images/versusBG-right.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Versus-legend {
+  height: 100%;
+  width: 25em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.Versus-legend-name {
+  padding: 2px;
+  height: 2em;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: -1px 2px #070707;
+  color: #ffffff;
+}
+.Image-Versus-legend {
+  height: 29em;
+}
+.Versus-legend-stats {
+  border-color: #d8c444;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #d8c44454;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 13em;
+  height: 34em;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+  margin: 1em;
+}
+.Versus-legend-stats p {
+  padding-left: 1em;
+}
+.Stats-h3 {
+  border-color: #d8c444;
+  border-width: 2px;
+  text-align: center;
+  text-shadow: -1px 2px #070707;
+  color: #d8c444;
+  width: 10em;
+  height: 5em;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+}
+.Vote-versus-legend {
+  border-color: #d8c444;
+  background-color: #d8c44454;
+  text-shadow: -1px 2px #070707;
+  color: #ffffff;
+  width: 5em;
+  height: 2em;
+  font-size: 30px;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+}
+.Versus-legend1-stats {
+  border-color: #d8c444;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #40564c7d;
+  text-align: right;
+  padding: 1px;
+  width: 13em;
+  height: 34em;
+  display: flex;
+  text-align: right;
+  padding: 1px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+  margin: 1em;
+}
+.Versus-legend1-stats p {
+  padding-right: 1em;
+}
+.Vote-versus-legend1 {
+  border-color: #d8c444;
+  background-color: #40564c7d;
+  text-shadow: -1px 2px #070707;
+  color: #ffffff;
+  width: 5em;
+  height: 2em;
+  font-size: 30px;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+  }
+.Name-versus-legend {
+  background-color: #d8c444;
+  width: 100%;
+  text-align: center;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+}
+.Name-versus-legend1 {
+  background-color: #d8c444;
+  width: 100%;
+  text-align: center;
+  font-family: "Audiowide", Georgia, "Times New Roman", Times, serif;
+}
+.playerImg {
+  height: 100%;
+  width: 100%;
+}
+.Versus-legend1 {
+  height: 100%;
+  width: 25em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.Versus-legend1-name {
+  padding: 2px;
+  height: 2em;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: -1px 2px #070707;
+  color: #ffffff;
+}
+.Image-Versus-legend1 {
+  height: 29em;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Versus-legend-name,
+  .Versus-legend1-name {
+    font-size: 19px;
+    
+  }
+  .Image-Versus-legend, .Image-Versus-legend1{
+    height: 20em;
+  }
+ .Versus-legend, .Versus-legend1{
+    justify-content: space-around;
+ }
+}
+@media screen and (max-width: 767px){
+    .Versus-legend-name,
+    .Versus-legend1-name {
+      font-size: 17px;
+      
+    }
+    .Image-Versus-legend, .Image-Versus-legend1{
+        height: 20em;
+      }
+      .Versus-legend, .Versus-legend1{
+        justify-content: space-evenly;
+     }
+     .Versus-legend-container, .Versus-legend1-container{
+        height: 36em
+     }
+}
+button:active {
+    background-color: #d8c444;
+    outline: none; /* Pour enlever la bordure bleu */
+}

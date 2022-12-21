@@ -17,6 +17,7 @@ function Navbar() {
   console.log(focusNavLink);
 
   const changeBg = () => {};
+  
   return (
     <>
       <IconContext.Provider value={{ color: "undefined" }}>

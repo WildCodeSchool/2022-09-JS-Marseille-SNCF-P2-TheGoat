@@ -20,27 +20,15 @@ export const SidebarData = [
 
   },
   {
-    title: "Season",
-    path: "/season",
+    title: "Calendar",
+    path: "/calendar",
     icons: <BsIcons.BsCalendarDateFill />,
     cName: "nav-text",
   },
   {
-    title: "Stats",
-    path: "/stats",
-    icons: <MdIcons.MdOutlineQueryStats />,
-    cName: "nav-text",
-  },
-  {
-    title: "Team",
+    title: "Teams",
     path: "/team",
     icons: <AiIcons.AiOutlineTeam />,
-    cName: "nav-text",
-  },
-  {
-    title: "Features",
-    path: "/features",
-    icons: <MdIcons.MdFeaturedVideo />,
     cName: "nav-text",
   },
 ];

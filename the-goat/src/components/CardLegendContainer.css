@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Audiowide';
+        src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
+    }
+.Card-legend-container{
+    margin-bottom: 1.2em;    
+    border-color: #d8c444;
+    height: 35em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .Card-legend-container{
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 2em;
+    }
+    
+  }
+  @media screen and (max-width: 767px) {
+    .Card-legend-container{
+        flex-direction: row;
+        height: 100%;
+        
+    }  
+}

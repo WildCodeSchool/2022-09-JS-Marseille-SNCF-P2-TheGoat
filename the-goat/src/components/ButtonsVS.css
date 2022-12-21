@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Audiowide';
+        src:  url(./fonts/Audiowide-Regular.ttf) format(truetype);
+    }
+    
+.buttonVs {
+    height: 3em;
+    width: 3em;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Audiowide', Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcfafa00;
+    color: white;
+    border-color: #d8c444;
+}
